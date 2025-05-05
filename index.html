@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R1 Machine Price Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>R1 Machine Price Calculator</h1>
+        
+        <div class="calculator">
+            <div class="exchange-rates">
+                <div class="rate-item">
+                    <label for="usd-cny">USD → CNY:</label>
+                    <input type="number" id="usd-cny" value="7.2950" step="0.0001">
+                </div>
+                <div class="rate-item">
+                    <label for="aud-cny">AUD → CNY:</label>
+                    <input type="number" id="aud-cny" value="5.5513" step="0.0001">
+                </div>
+                <div class="rate-item">
+                    <label for="aud-usd">AUD → USD:</label>
+                    <input type="number" id="aud-usd" value="0.7604" step="0.0001">
+                </div>
+            </div>
+
+            <table id="components-table">
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Currency</th>
+                        <th>Total (USD)</th>
+                        <th>Total (AUD)</th>
+                        <th>Total (CNY)</th>
+                        <th>Remarks</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AMD EPYC 9355</td>
+                        <td><input type="number" class="quantity" value="2" min="1" title="Quantity" aria-label="Quantity"></td>
+                        <td><input type="number" class="price" value="3869.00" step="0.01" title="Unit Price" aria-label="Unit Price"></td>
+                        <td>
+                            <select class="currency" title="Currency" aria-label="Currency">
+                                <option value="USD" selected>USD</option>
+                                <option value="AUD">AUD</option>
+                                <option value="CNY">CNY</option>
+                            </select>
+                        </td>
+                        <td class="total-usd">7738.00</td>
+                        <td class="total-aud">12004.03</td>
+                        <td class="total-cny">56448.71</td>
+                        <td><input type="text" class="remarks" placeholder="Add notes here" title="Remarks" aria-label="Remarks"></td>
+                        <td><button class="delete-btn">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Radeon 5090 GPU</td>
+                        <td><input type="number" class="quantity" value="1" min="1" title="Quantity" aria-label="Quantity"></td>
+                        <td><input type="number" class="price" value="5999.00" step="0.01" title="Unit Price" aria-label="Unit Price"></td>
+                        <td>
+                            <select class="currency" title="Currency" aria-label="Currency">
+                                <option value="USD">USD</option>
+                                <option value="AUD" selected>AUD</option>
+                                <option value="CNY">CNY</option>
+                            </select>
+                        </td>
+                        <td class="total-usd">3866.17</td>
+                        <td class="total-aud">5999.00</td>
+                        <td class="total-cny">28212.76</td>
+                        <td><input type="text" class="remarks" placeholder="Add notes here" title="Remarks" aria-label="Remarks"></td>
+                        <td><button class="delete-btn">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Micron 64 GB DDR5-5600 RDIMM ECC</td>
+                        <td><input type="number" class="quantity" value="24" min="1" title="Quantity" aria-label="Quantity"></td>
+                        <td><input type="number" class="price" value="617.95" step="0.01" title="Unit Price" aria-label="Unit Price"></td>
+                        <td>
+                            <select class="currency" title="Currency" aria-label="Currency">
+                                <option value="USD">USD</option>
+                                <option value="AUD" selected>AUD</option>
+                                <option value="CNY">CNY</option>
+                            </select>
+                        </td>
+                        <td class="total-usd">9559.55</td>
+                        <td class="total-aud">14830.80</td>
+                        <td class="total-cny">69721.03</td>
+                        <td><input type="text" class="remarks" placeholder="Add notes here" title="Remarks" aria-label="Remarks"></td>
+                        <td><button class="delete-btn">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Samsung 990 PRO PCIe 4.0 NVMe M.2 SSD</td>
+                        <td><input type="number" class="quantity" value="1" min="1" title="Quantity" aria-label="Quantity"></td>
+                        <td><input type="number" class="price" value="340.00" step="0.01" title="Unit Price" aria-label="Unit Price"></td>
+                        <td>
+                            <select class="currency" title="Currency" aria-label="Currency">
+                                <option value="USD" selected>USD</option>
+                                <option value="AUD">AUD</option>
+                                <option value="CNY">CNY</option>
+                            </select>
+                        </td>
+                        <td class="total-usd">340.00</td>
+                        <td class="total-aud">528.00</td>
+                        <td class="total-cny">2480.30</td>
+                        <td><input type="text" class="remarks" placeholder="Add notes here" title="Remarks" aria-label="Remarks"></td>
+                        <td><button class="delete-btn">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Seagate Exos X16 16 TB Enterprise HDD</td>
+                        <td><input type="number" class="quantity" value="1" min="1" title="Quantity" aria-label="Quantity"></td>
+                        <td><input type="number" class="price" value="213.89" step="0.01" title="Unit Price" aria-label="Unit Price"></td>
+                        <td>
+                            <select class="currency" title="Currency" aria-label="Currency">
+                                <option value="USD" selected>USD</option>
+                                <option value="AUD">AUD</option>
+                                <option value="CNY">CNY</option>
+                            </select>
+                        </td>
+                        <td class="total-usd">213.89</td>
+                        <td class="total-aud">332.03</td>
+                        <td class="total-cny">1560.32</td>
+                        <td><input type="text" class="remarks" placeholder="Add notes here" title="Remarks" aria-label="Remarks"></td>
+                        <td><button class="delete-btn">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="subtotal-usd">21717.61</td>
+                        <td id="subtotal-aud">33693.86</td>
+                        <td id="subtotal-cny">158423.12</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="actions">
+                <button id="add-row">Add Component</button>
+                <button id="export-csv">Export to CSV</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
