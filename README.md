@@ -10,6 +10,7 @@ This is a simple HTML application for calculating R1 machine component prices, s
 - Adjustable exchange rates
 - Responsive design for various devices
 - Export data to CSV file
+- Component categorization (CPU, GPU, Memory, etc.)
 
 ## How to Use
 
@@ -18,6 +19,7 @@ This is a simple HTML application for calculating R1 machine component prices, s
 3. Click the "Add Component" button to add a new component row
 4. In each row, you can:
    - Enter component name (for newly added components)
+   - Select a category (CPU, Memory, Storage, etc.)
    - Adjust quantity
    - Modify unit price
    - Select currency
@@ -74,10 +76,14 @@ You can also:
 - Add "Export to CSV" button
 - Add "Remarks" column after Total (CNY) for storing additional information
 - Add Motherboard Supermicro MBD-H13DSH (SoC SP5 AMD EPYC 9004 Series, SATA, M.2, DDR5)
+- Add Seasonic PRIME PX-1600 1600W Platinum ATX 3.0 Power Supply
 
 ### Pending Tasks
 
 ### To-Do Tasks
+- Add "Category" column to display component types (CPU, Memory, GPU, PSU, Storage, etc.)
+- Implement filtering and sorting by component category
+- Add subtotals by component category
 
 
 ## Technologies Used

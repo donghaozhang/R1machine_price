@@ -30,6 +30,7 @@
                 <thead>
                     <tr>
                         <th>Component</th>
+                        <th>Category</th>
                         <th>Quantity</th>
                         <th>Unit Price</th>
                         <th>Currency</th>
@@ -43,6 +44,19 @@
                 <tbody>
                     <tr>
                         <td>AMD EPYC 9355</td>
+                        <td>
+                            <select class="category" title="Category" aria-label="Category">
+                                <option value="CPU" selected>CPU</option>
+                                <option value="GPU">GPU</option>
+                                <option value="Memory">Memory</option>
+                                <option value="Storage">Storage</option>
+                                <option value="Motherboard">Motherboard</option>
+                                <option value="PSU">PSU</option>
+                                <option value="Cooling">Cooling</option>
+                                <option value="Case">Case</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
                         <td><input type="number" class="quantity" value="2" min="1" title="Quantity" aria-label="Quantity"></td>
                         <td><input type="number" class="price" value="3869.00" step="0.01" title="Unit Price" aria-label="Unit Price"></td>
                         <td>
@@ -60,6 +74,19 @@
                     </tr>
                     <tr>
                         <td>Radeon 5090 GPU</td>
+                        <td>
+                            <select class="category" title="Category" aria-label="Category">
+                                <option value="CPU">CPU</option>
+                                <option value="GPU" selected>GPU</option>
+                                <option value="Memory">Memory</option>
+                                <option value="Storage">Storage</option>
+                                <option value="Motherboard">Motherboard</option>
+                                <option value="PSU">PSU</option>
+                                <option value="Cooling">Cooling</option>
+                                <option value="Case">Case</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
                         <td><input type="number" class="quantity" value="1" min="1" title="Quantity" aria-label="Quantity"></td>
                         <td><input type="number" class="price" value="5999.00" step="0.01" title="Unit Price" aria-label="Unit Price"></td>
                         <td>
@@ -77,6 +104,19 @@
                     </tr>
                     <tr>
                         <td>Micron 64 GB DDR5-5600 RDIMM ECC</td>
+                        <td>
+                            <select class="category" title="Category" aria-label="Category">
+                                <option value="CPU">CPU</option>
+                                <option value="GPU">GPU</option>
+                                <option value="Memory" selected>Memory</option>
+                                <option value="Storage">Storage</option>
+                                <option value="Motherboard">Motherboard</option>
+                                <option value="PSU">PSU</option>
+                                <option value="Cooling">Cooling</option>
+                                <option value="Case">Case</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
                         <td><input type="number" class="quantity" value="24" min="1" title="Quantity" aria-label="Quantity"></td>
                         <td><input type="number" class="price" value="617.95" step="0.01" title="Unit Price" aria-label="Unit Price"></td>
                         <td>
@@ -94,6 +134,19 @@
                     </tr>
                     <tr>
                         <td>Samsung 990 PRO PCIe 4.0 NVMe M.2 SSD</td>
+                        <td>
+                            <select class="category" title="Category" aria-label="Category">
+                                <option value="CPU">CPU</option>
+                                <option value="GPU">GPU</option>
+                                <option value="Memory">Memory</option>
+                                <option value="Storage" selected>Storage</option>
+                                <option value="Motherboard">Motherboard</option>
+                                <option value="PSU">PSU</option>
+                                <option value="Cooling">Cooling</option>
+                                <option value="Case">Case</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
                         <td><input type="number" class="quantity" value="1" min="1" title="Quantity" aria-label="Quantity"></td>
                         <td><input type="number" class="price" value="340.00" step="0.01" title="Unit Price" aria-label="Unit Price"></td>
                         <td>
@@ -111,6 +164,19 @@
                     </tr>
                     <tr>
                         <td>Seagate Exos X16 16 TB Enterprise HDD</td>
+                        <td>
+                            <select class="category" title="Category" aria-label="Category">
+                                <option value="CPU">CPU</option>
+                                <option value="GPU">GPU</option>
+                                <option value="Memory">Memory</option>
+                                <option value="Storage" selected>Storage</option>
+                                <option value="Motherboard">Motherboard</option>
+                                <option value="PSU">PSU</option>
+                                <option value="Cooling">Cooling</option>
+                                <option value="Case">Case</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
                         <td><input type="number" class="quantity" value="1" min="1" title="Quantity" aria-label="Quantity"></td>
                         <td><input type="number" class="price" value="213.89" step="0.01" title="Unit Price" aria-label="Unit Price"></td>
                         <td>
@@ -128,6 +194,19 @@
                     </tr>
                     <tr>
                         <td>Supermicro MBD-H13DSH Motherboard</td>
+                        <td>
+                            <select class="category" title="Category" aria-label="Category">
+                                <option value="CPU">CPU</option>
+                                <option value="GPU">GPU</option>
+                                <option value="Memory">Memory</option>
+                                <option value="Storage">Storage</option>
+                                <option value="Motherboard" selected>Motherboard</option>
+                                <option value="PSU">PSU</option>
+                                <option value="Cooling">Cooling</option>
+                                <option value="Case">Case</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
                         <td><input type="number" class="quantity" value="1" min="1" title="Quantity" aria-label="Quantity"></td>
                         <td><input type="number" class="price" value="1151.70" step="0.01" title="Unit Price" aria-label="Unit Price"></td>
                         <td>
@@ -144,7 +223,38 @@
                         <td><button class="delete-btn">Delete</button></td>
                     </tr>
                     <tr>
+                        <td>Seasonic PRIME PX-1600 Power Supply</td>
+                        <td>
+                            <select class="category" title="Category" aria-label="Category">
+                                <option value="CPU">CPU</option>
+                                <option value="GPU">GPU</option>
+                                <option value="Memory">Memory</option>
+                                <option value="Storage">Storage</option>
+                                <option value="Motherboard">Motherboard</option>
+                                <option value="PSU" selected>PSU</option>
+                                <option value="Cooling">Cooling</option>
+                                <option value="Case">Case</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="quantity" value="1" min="1" title="Quantity" aria-label="Quantity"></td>
+                        <td><input type="number" class="price" value="749.00" step="0.01" title="Unit Price" aria-label="Unit Price"></td>
+                        <td>
+                            <select class="currency" title="Currency" aria-label="Currency">
+                                <option value="USD">USD</option>
+                                <option value="AUD" selected>AUD</option>
+                                <option value="CNY">CNY</option>
+                            </select>
+                        </td>
+                        <td class="total-usd">482.54</td>
+                        <td class="total-aud">749.00</td>
+                        <td class="total-cny">3520.45</td>
+                        <td><input type="text" class="remarks" placeholder="Add notes here" value="1600W Platinum ATX 3.0 Fully Modular Power Supply" title="Remarks" aria-label="Remarks"></td>
+                        <td><button class="delete-btn">Delete</button></td>
+                    </tr>
+                    <tr>
                         <td>Subtotal</td>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
