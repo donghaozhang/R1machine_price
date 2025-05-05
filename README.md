@@ -27,6 +27,34 @@ This is a simple HTML application for calculating R1 machine component prices, s
 5. Adjust exchange rates at the top of the page, all prices will update automatically
 6. Click the "Export to CSV" button to download the current data as a CSV file
 
+### Command Line Access
+
+To open the calculator directly from the command line:
+
+```
+start chrome "file:///C:/Users/zdhpe/Desktop/r1machine_price/index.html"
+```
+
+#### Setting Up a Quick Launcher (Windows)
+
+For easier access, create a batch file:
+
+1. Create a new text file on your desktop or another convenient location
+2. Add these lines to the file:
+   ```
+   @echo off
+   start chrome "file:///C:/Users/zdhpe/Desktop/r1machine_price/index.html"
+   ```
+3. Save the file with a `.bat` extension, for example: `r1calc.bat`
+4. Double-click this file whenever you want to open the calculator
+
+#### Alternative Methods
+
+You can also:
+- Create a desktop shortcut to the HTML file
+- Pin the calculator to your taskbar after opening it in Chrome
+- Add the file to your browser bookmarks
+
 ## File Structure
 
 - `index.html` - Main HTML file
@@ -45,6 +73,7 @@ This is a simple HTML application for calculating R1 machine component prices, s
 - Accessibility improvements
 - Add "Export to CSV" button
 - Add "Remarks" column after Total (CNY) for storing additional information
+- Add Motherboard Supermicro MBD-H13DSH (SoC SP5 AMD EPYC 9004 Series, SATA, M.2, DDR5)
 
 ### Pending Tasks
 
