@@ -1,0 +1,35 @@
+---
+description: 
+globs: *.js
+alwaysApply: false
+---
+# JavaScript Functionality
+
+The [script.js](mdc:script.js) file contains all the interactive functionality for the R1 Machine Price Calculator.
+
+## Core Functions
+
+- `initializeTable()`: Sets up the initial state of the table, attaching event listeners and calculating initial values
+- `updateAllEventListeners()`: Attaches event listeners to all interactive elements
+- `addNewRow()`: Creates a new component row in the table
+- `calculateRow(row)`: Calculates pricing for a single row based on quantity, price, and currency
+- `calculateAllRows()`: Recalculates all rows (used when exchange rates change)
+- `calculateSubtotal()`: Calculates and updates the totals at the bottom of the table
+
+## Event Listeners
+
+The script adds event listeners for:
+- Exchange rate input changes
+- Quantity and price changes for each component
+- Currency selection changes
+- Delete button clicks
+- Add component button clicks
+
+## DOM Manipulation
+
+The application uses standard DOM manipulation techniques:
+- `querySelector` and `getElementById` to select elements
+- Event delegation for handling row-level events
+- Template literals for generating HTML for new rows
+- `textContent` for updating calculated values
+

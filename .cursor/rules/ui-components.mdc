@@ -1,0 +1,46 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# UI Components Structure
+
+The R1 Machine Price Calculator uses a simple but effective UI structure.
+
+## Main Container
+
+[index.html](mdc:index.html) contains a main container div that holds the entire application.
+
+## Exchange Rate Section
+
+The top section contains input fields for exchange rates:
+- USD to CNY
+- AUD to CNY
+- AUD to USD
+
+These inputs have event listeners that trigger recalculation when values change.
+
+## Components Table
+
+The central element is a table with columns for:
+- Component name
+- Quantity
+- Unit price
+- Currency selector
+- Total prices in USD, AUD, and CNY
+- Action buttons (Delete)
+
+The table includes a special last row for subtotals.
+
+## Action Buttons
+
+The "Add Component" button adds new rows to the table.
+
+## Styling
+
+[styles.css](mdc:styles.css) provides:
+- Responsive layout that works on mobile and desktop
+- Clean, modern appearance with appropriate colors
+- Proper spacing and alignment of elements
+- Hover effects for interactive elements
+

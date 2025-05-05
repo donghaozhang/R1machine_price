@@ -1,0 +1,39 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Component Price Calculation Logic
+
+The price calculation system converts between currencies and calculates totals for all components.
+
+## Exchange Rates
+
+These are defined in the UI and can be adjusted by the user:
+- USD to CNY: Default 7.2950
+- AUD to CNY: Default 5.5513
+- AUD to USD: Default 0.7604
+
+## Calculation Flow
+
+1. When a component's details change (quantity, price, currency):
+   - The row calculations are triggered in [script.js](mdc:script.js) (see `calculateRow()` function)
+   - Prices are converted between all three currencies
+   - Row totals are updated
+   
+2. When any row is changed or deleted:
+   - The subtotal is recalculated for all currencies
+   - See `calculateSubtotal()` function in [script.js](mdc:script.js)
+
+3. When exchange rates are modified:
+   - All rows are recalculated with new rates
+   - The subtotal is updated accordingly
+   
+## Adding New Components
+
+When adding a new component with the "Add Component" button:
+1. A new row is created in the table
+2. Event listeners are attached to the row's inputs
+3. The row is initialized with default values
+4. Calculations are performed immediately to show initial totals
+

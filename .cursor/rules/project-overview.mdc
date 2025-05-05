@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# R1 Machine Price Calculator Overview
+
+This is a simple HTML application for calculating R1 machine component prices with support for multiple currencies (USD, AUD, CNY).
+
+## Project Structure
+
+- [index.html](mdc:index.html): Main HTML file containing the application UI
+- [styles.css](mdc:styles.css): CSS styling for the application 
+- [script.js](mdc:script.js): JavaScript code for handling calculations and interactivity
+- [README.md](mdc:README.md): Project documentation
+
+## Main Features
+
+- Interactive component price calculator
+- Support for multiple currencies (USD, AUD, CNY)
+- Dynamic exchange rate adjustments
+- Add/remove components functionality
+- Automatic calculation of subtotals
+

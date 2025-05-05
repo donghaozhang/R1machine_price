@@ -1,0 +1,36 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Accessibility Features
+
+The R1 Machine Price Calculator includes several accessibility features to ensure it works well for all users.
+
+## Form Element Accessibility
+
+All form elements in [index.html](mdc:index.html) have proper accessibility attributes:
+- Input fields have `title` and `aria-label` attributes
+- Select elements have `title` and `aria-label` attributes
+- Buttons have clear, descriptive text
+
+## Semantic HTML
+
+The application uses semantic HTML elements appropriately:
+- `<table>` for tabular data with proper `<thead>` and `<tbody>` sections
+- `<label>` elements properly associated with form inputs
+- Headings used in the correct hierarchical order
+
+## Color Contrast
+
+The styles in [styles.css](mdc:styles.css) ensure sufficient color contrast:
+- Dark text on light backgrounds
+- Button colors that provide adequate contrast with their text
+
+## Responsive Design
+
+The layout is responsive and works well on different screen sizes:
+- Table becomes scrollable on small screens
+- Exchange rate inputs stack vertically on mobile
+- All interactive elements remain usable at various screen sizes
+
